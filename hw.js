@@ -9,7 +9,9 @@ const week = 10080;
 if (counBe / week >= 1){
     const remainingWeeks = counBe / week
     const remainingDaysInMinutes = counBe % week
-    console.log(`${Math.floor(remainingWeeks)} w ${Math.floor(remainingDaysInMinutes / day)}d`)
+    const weekMessage = math.floor(remainingWeeks) === 1 ? 'week' : 'weeks';
+    const daysMessage = math.floor(remainingDaysInMinutes / day) > 1? 'days' : 'day'
+    console.log(`${Math.floor(remainingWeeks)}${weekMessage} ${Math.floor(remainingDaysInMinutes / day)}${daysMessage}`)
 
 }else if (counBe / day >= 1){
     const remainingDays = counBe / day
